@@ -1,12 +1,12 @@
 import { Outlet } from "react-router-dom";
 import { Container } from "react-bootstrap";
-import Header from "./Header";
+import MainHeader from "./Header";
 import Footer from "./Footer";
 
 function Layout() {
   return (
     <div>
-      <Header />
+      <MainHeader />
       <main>
         <Container>
           <Outlet />

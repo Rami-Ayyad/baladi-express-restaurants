@@ -1,7 +1,7 @@
 import styles from "./index.module.css";
 
 const RestaurantsPage = () => {
-  return <div>RestaurantsPage</div>;
+  return <div className={`${styles["restaurants-page"]}`}>RestaurantsPage</div>;
 };
 
 export default RestaurantsPage;

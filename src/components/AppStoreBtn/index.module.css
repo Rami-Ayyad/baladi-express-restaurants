@@ -1,0 +1,28 @@
+.app-store-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: transparent;
+  color: white;
+  padding: 5px;
+  width: 130px;
+  margin-block-end: 10px;
+}
+.app-store-btn > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-inline-start: 5px;
+}
+
+.app-store-btn > div span:first-child {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.app-store-btn > div span:last-child {
+  font-weight: 600;
+}

@@ -1,0 +1,109 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  background-image: url("../../assets/footerBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  min-height: 31rem;
+  color: white;
+  font-weight: 600;
+}
+
+.footer :global(.container) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 80%;
+}
+
+.footer :global(.row) {
+  width: 100%;
+}
+
+.footer .logo img {
+  width: 95px;
+}
+
+.footer .email {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .trade-mark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  padding-block: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.457);
+  width: 100%;
+}
+
+.footer p {
+  cursor: pointer;
+}
+
+.footer .link p:first-child {
+  font-weight: 400;
+  cursor: default;
+}
+
+.footer .social-icons {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer .social-icons span {
+  cursor: pointer;
+}
+
+.footer .social-icons u {
+  margin-inline-end: 3rem;
+}
+
+.footer .app-stores {
+  display: flex;
+  gap: 1rem;
+  justify-content: end;
+}
+
+@media (max-width: 768px) {
+  .footer :global(.container .row:nth-child(1)) {
+    flex-wrap: wrap;
+  }
+
+  .footer .email {
+    width: auto;
+    min-width: 100%;
+    margin-block-end: 1rem;
+  }
+
+  .footer .email p {
+    margin-block-end: 0px;
+  }
+
+  .footer .app-stores {
+    justify-content: center;
+    margin-block-start: 10px;
+  }
+  .footer .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 443px) {
+  .footer p {
+    font-size: 12px;
+  }
+}

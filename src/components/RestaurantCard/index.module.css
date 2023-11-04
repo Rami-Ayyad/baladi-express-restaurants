@@ -1,6 +1,48 @@
-.restaurant-card {
+.restaurant-card :global(.card) {
+  border: none;
+  box-shadow: 0px 10px 50px lightgray;
+  cursor: pointer;
+}
+
+.restaurant-card :global(.card-title) {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.restaurant-card :global(.card-title) p {
+  display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
+  background-color: var(--heavy-orange);
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.restaurant-card :global(.card-text) {
+  color: gray;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.restaurant-card :global(.card-text) div {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.restaurant-card :global(.card-footer) {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: transparent;
+  border-top: dotted gray 2px;
+  color: var(--heavy-orange);
+  gap: 0.7rem;
+  font-size: 14px;
+  font-weight: 600;
 }

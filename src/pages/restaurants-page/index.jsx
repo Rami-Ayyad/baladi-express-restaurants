@@ -4,6 +4,7 @@ import { Carousel, BreadCrumbs, RestaurantCard } from "../../components";
 import { useQuery } from "@tanstack/react-query";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
+import Row from "react-bootstrap/Row";
 
 const getRestaurantsQueryFn = () => apis.restaurants.getRestaurants();
 const getCategoriesQueryFn = () => apis.categories.getCategories();
@@ -66,14 +67,19 @@ const RestaurantsPage = () => {
 
       <section>
         <h2>All Restaurants</h2>
-        {!restaurantsLoading &&
-          restaurantsData?.stores.map((restaurant, i) => (
-            <RestaurantCard
-              key={restaurant.id}
-              cardData={restaurant}
-              index={i}
-            />
-          ))}
+        <Row xs={1} sm={2} md={3} className="g-4">
+          {!restaurantsLoading ? (
+            restaurantsData?.stores.map((restaurant, i) => (
+              <RestaurantCard
+                key={restaurant.id}
+                cardData={restaurant}
+                index={i}
+              />
+            ))
+          ) : (
+            <Skeleton count={3} height={200} highlightColor="#ff580036" />
+          )}
+        </Row>
       </section>
     </div>
   );

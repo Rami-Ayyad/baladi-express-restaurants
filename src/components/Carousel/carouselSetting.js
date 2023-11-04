@@ -43,7 +43,7 @@ export const carouselSettings = (cardType) => {
       infinite: false,
       speed: 1200,
       slidesToShow: 7,
-      slidesToScroll: 2,
+      slidesToScroll: 3,
       responsive: [
         {
           breakpoint: 1200,

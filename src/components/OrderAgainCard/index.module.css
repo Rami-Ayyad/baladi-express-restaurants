@@ -1,0 +1,25 @@
+.order-again-card {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid var(--light-gray);
+  border-radius: 10px;
+  width: 100%;
+  max-width: 370px;
+}
+
+.order-again-card :is(h5, p) {
+  margin: 0;
+  padding-inline-start: 5px;
+}
+
+.order-again-card img {
+  width: 50px;
+  object-fit: contain;
+}
+
+.order-again-card > div {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,14 @@
+.bread-crumbs {
+  font-weight: 600;
+  font-size: 18px;
+  margin-block-start: 1rem;
+  cursor: pointer;
+}
+
+.bread-crumbs p {
+  color: lightgray;
+}
+
+.bread-crumbs span {
+  color: var(--heavy-orange);
+}

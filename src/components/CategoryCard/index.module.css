@@ -1,0 +1,16 @@
+.category-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.category-card img {
+  width: 140px;
+  border-radius: 10px;
+}
+
+.category-card h5 {
+  text-align: center;
+}

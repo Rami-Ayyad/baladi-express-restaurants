@@ -3,3 +3,8 @@ export { LocatoinDropdown } from "./LocatoinDropdown/index.jsx";
 export { HeaderOptions } from "./HeaderOptions/index.jsx";
 export { EmailInput } from "./EmailInput/index.jsx";
 export { AppStoreBtn } from "./AppStoreBtn/index.jsx";
+export { Carousel } from "./Carousel/index.jsx";
+export { BreadCrumbs } from "./BreadCrumbs/index.jsx";
+export { CategoryCard } from "./CategoryCard/index.jsx";
+export { OrderAgainCard } from "./OrderAgainCard/index.jsx";
+export { RestaurantCard } from "./RestaurantCard/index.jsx";

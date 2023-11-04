@@ -31,7 +31,9 @@ function Footer() {
   };
 
   const renderSocialIcons = (socialMediaIconsArr) => {
-    return socialMediaIconsArr.map((social, i) => <span>{social}</span>);
+    return socialMediaIconsArr.map((social, i) => (
+      <span key={i}>{social}</span>
+    ));
   };
 
   return (
